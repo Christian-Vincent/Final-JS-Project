@@ -20,6 +20,7 @@ function handleUserSearch (){
   });
   const renderPosters = (response) => {
     console.log(response);
+    document.getElementById("movies").innerHTML = response.results[0].vote_average;
   }
 }
 document.getElementById("button").onclick = function() {
